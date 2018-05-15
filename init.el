@@ -51,6 +51,9 @@
     ;; of ido
     ido-ubiquitous
 
+    ;; import java classes easily
+    java-imports
+
     markdown-mode
 
     ;; Enhances M-x to allow easier execution of commands. Provides
@@ -68,7 +71,21 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; pomodoro timer
+    pomidor
+
+    ;; mode which can handle mixed js and html like jsx
+    web-mode
+
+    ;; nice js editing mode which recognizes modern ES6+ features
+    js2-mode
+
+    ;; A major mode for editing JSX files
+    rjsx-mode
+    )
+)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -126,7 +143,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Langauage-specific
+;; Language-specific
 (load "setup-clojure.el")
 (load "setup-groovy.el")
+(load "setup-java.el")
 (load "setup-js.el")
+(put 'downcase-region 'disabled nil)
