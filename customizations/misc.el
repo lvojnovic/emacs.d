@@ -10,3 +10,9 @@
 
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
+
+;; unset exit keys
+(global-unset-key (kbd "C-x C-c"))
+
+;; unset minimize key
+(global-unset-key (kbd "C-z"))
