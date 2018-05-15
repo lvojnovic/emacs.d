@@ -59,3 +59,6 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+(global-set-key (kbd "M-[") 'projectile-find-file)
+(global-set-key (kbd "M-]") 'projectile-switch-project)
+(global-set-key (kbd "M-'") 'projectile-grep)
