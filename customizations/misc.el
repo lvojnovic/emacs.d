@@ -16,3 +16,10 @@
 
 ;; unset minimize key
 (global-unset-key (kbd "C-z"))
+
+;; key for pomidor timer
+(global-set-key (kbd "<f12>") #'pomidor)
+
+;; no ticking sounds for pomodidor timer
+(setq pomidor-sound-tick nil
+      pomidor-sound-tack nil)
