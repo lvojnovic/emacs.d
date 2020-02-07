@@ -26,3 +26,5 @@
 
 ;; adds timestamp when you mark TODO -> DONE in org mode
 (setq org-log-done 'time)
+
+(add-hook 'org-mode-hook (lambda () (linum-mode 0)))
