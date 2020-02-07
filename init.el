@@ -89,6 +89,9 @@
 
     ;; A major mode for editing JSX files
     rjsx-mode
+
+    ;; Major mode for editing YAML files
+    yaml-mode
     )
 )
 
