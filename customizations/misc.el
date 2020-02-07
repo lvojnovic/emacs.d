@@ -23,3 +23,6 @@
 ;; no ticking sounds for pomodidor timer
 (setq pomidor-sound-tick nil
       pomidor-sound-tack nil)
+
+;; adds timestamp when you mark TODO -> DONE in org mode
+(setq org-log-done 'time)
