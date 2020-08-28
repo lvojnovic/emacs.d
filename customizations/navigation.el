@@ -62,3 +62,13 @@
 (global-set-key (kbd "M-[") 'projectile-find-file)
 (global-set-key (kbd "M-]") 'projectile-switch-project)
 (global-set-key (kbd "M-'") 'projectile-grep)
+(setq projectile-enable-caching t
+      projectile-indexing-method 'alien
+      projectile-hg-command "hg files -0 -I ."
+      projectile-create-missing-test-files t)
+;; more compatible with monorepo
+(setq projectile-project-root-files-functions
+      '(projectile-root-local
+        projectile-root-top-down
+        projectile-root-bottom-up
+        projectile-root-top-down-recurring))
