@@ -65,7 +65,7 @@
 (global-set-key (kbd "C-;") 'toggle-comment-on-line)
 
 ;; yay rainbows!
-(global-rainbow-delimiters-mode t)
+;; (global-rainbow-delimiters-mode t) ;; ne radi vise
 
 ;; use 4 spaces for tabs
 (defun die-tabs ()
