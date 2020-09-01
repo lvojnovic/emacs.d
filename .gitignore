@@ -10,3 +10,6 @@ auto-save-list
 backups
 elpa
 var
+melpa-stable
+archive-contents
+*.elc
