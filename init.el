@@ -96,6 +96,10 @@
 
     ;; Major mode for editing YAML files
     yaml-mode
+
+    ;; TypeScript Interactive Development Environment for Emacs
+    tide
+    typescript-mode
     )
 )
 
@@ -160,4 +164,10 @@
 (load "setup-groovy.el")
 (load "setup-java.el")
 (load "setup-js.el")
+(load "setup-typescript.el")
 (put 'downcase-region 'disabled nil)
+
+(load "work.el")
+
+(load "re-jump.el")
+(put 'scroll-left 'disabled nil)

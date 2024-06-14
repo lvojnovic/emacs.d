@@ -60,9 +60,10 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
-(global-set-key (kbd "M-[") 'projectile-find-file)
-(global-set-key (kbd "M-]") 'projectile-switch-project)
-(global-set-key (kbd "M-'") 'projectile-grep)
+(helm-projectile-on)
+(global-set-key (kbd "M-[") 'helm-projectile-find-file)
+(global-set-key (kbd "M-]") 'helm-projectile-switch-project)
+(global-set-key (kbd "M-'") 'helm-projectile-grep)
 (setq projectile-enable-caching t
       projectile-indexing-method 'alien
       projectile-hg-command "hg files -0 -I ."
@@ -73,3 +74,5 @@
         projectile-root-top-down
         projectile-root-bottom-up
         projectile-root-top-down-recurring))
+
+(global-set-key (kbd "M-i") 'helm-swoop)
